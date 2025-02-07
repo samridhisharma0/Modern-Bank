@@ -2,9 +2,10 @@
 import { initializeApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
+// import dotenv from "dotenv"
 
 const firebaseConfig = {
-    apiKey: "AIzaSyD_WhpVadWP-35gkLH6rDWac08AgUTeYFY",
+    apiKey: import.meta.env.VITE_apiKey,
     authDomain: "modern-bank-caaca.firebaseapp.com",
     projectId: "modern-bank-caaca",
     storageBucket: "modern-bank-caaca.firebasestorage.app",
